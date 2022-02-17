@@ -43,9 +43,7 @@ Question 5B(découle de non à la Q4A): Souhaitez vous interroger Deniz ?
 Oui --> Deniz vous dévoile qu'il était seul dans sa chambre en train de réviser ses partiels 
 Non --> Vous pouvez interroger quelqu'un d'autre (il ne reste que Margaux, l'infirmière à interroger)
 
-Question 5C (découle de oui à la Q4B): Souhaitez vous interroger Deniz ?
-Oui --> Deniz vous dévoile qu'il était seul dans sa chambre en train de réviser ses partiels 
-Non --> Vous pouvez interroger quelqu'un d'autre (il ne reste que Margaux, l'infirmière à interroger)
+
 
 
 
