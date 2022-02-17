@@ -19,9 +19,17 @@ Question 3B(décvoule du non à la Q2) : Souhaitez vous interroger Julie ?
 Oui --> Julie vous révèle qu'au moment du crime il était avec Thomas dans le salon en train de ranger des livres dans la bibliothèque
 Non --> Vous pouvez interroger quelqu'un d'autre
 
-4ème question (qui découle du oui à la 3A) : Souhaitez vous vous rendre dans le salon pour vérifier que les livres sont bien rangé ?
+Question 4A(découle du oui à la Q3A) : Souhaitez vous vous rendre dans le salon pour vérifier que les livres sont bien rangé ?
 Oui --> Vous découvrez que les livres sont effectivement rangé là où il faut 
 Non --> Vous faites confiance à Julie et Thomas et n'allez pas vérifier leurs dires
 
-4ème question (qui découle du non à la Q3A) : 
+Question 4B(découle du non à la Q3A) : Souhaitez vous interroger Deniz ? 
+Oui --> Deniz vous dévoile qu'il était seul dans sa chambre en train de réviser ses partiels 
+Non --> Vous pouvez interroger quelqu'un d'autre 
+
+Question 4C(découle du oui à la Q3B) : Souhaitez vous interroger Deniz ?
+Oui --> Deniz vous dévoile qu'il était seul dans sa chambre en train de réviser ses partiels 
+Non --> Vous pouvez interroger quelqu'un d'autre (il ne reste que Margaux, l'infirmière à interroger)
+
+
 
