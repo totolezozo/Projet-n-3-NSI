@@ -1,7 +1,7 @@
 
 
 #Class pour créer l'arbre qui servira à faire les suites de questions
-class CréationArbre:
+class CreationArbre:
     """Définition de la classe arbre Binaire à partir du site de
     David Roche pixees.fr"""
     def __init__(self, valeur) -> None:
@@ -12,18 +12,18 @@ class CréationArbre:
     def insert_gauche(self, valeur):
         """Ajoute une étiquette à l'enfant gauche"""
         if self.enfant_gauche == None:
-            self.enfant_gauche = CréationArbre(valeur)
+            self.enfant_gauche = CreationArbre(valeur)
         else:
-            new_node = CréationArbre(valeur)
+            new_node = CreationArbre(valeur)
             new_node.enfant_gauche = self.enfant_gauche
             self.enfant_gauche = new_node
             
     def insert_droit(self, valeur):
         """Ajoute une étiquette à l'enfant droit"""
         if self.enfant_droit == None:
-            self.enfant_droit = CréationArbre(valeur)
+            self.enfant_droit = CreationArbre(valeur)
         else:
-            new_node = CréationArbre(valeur)
+            new_node = CreationArbre(valeur)
             new_node.enfant_droit = self.enfant_droit
             self.enfant_droit = new_node
     
@@ -46,7 +46,7 @@ class CréationArbre:
 if __name__ == "__main__":
     
 #Racine de l'arbre, création des 2 premières branches
-    racine = CréationArbre(dico[0])
+    racine = CreationArbre(dico[0])
     racine.insert_gauche(dico[1])
     racine.insert_droit(dico[2])
     
