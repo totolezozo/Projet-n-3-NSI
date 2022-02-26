@@ -32,7 +32,7 @@ Oui --> Deniz vous dévoile qu'il était seul dans sa chambre en train de révis
 Non --> Vous pouvez interroger quelqu'un d'autre (il ne reste que Margaux, l'infirmière à interroger)
 
 Question 4D(découle du non à la Q3B): Souhaitez vous interroger Margaux ?
-Oui --> Margaux vous explique qu'après avoir préparer la piqure habituelle d'Hervé, elle découvre son corps inanimé dans la baignoire avec un liquie violet mélangé à l'eau
+Oui --> Margaux vous explique qu'après avoir préparer la piqure habituelle d'Hervé, elle découvre son corps inanimé dans la baignoire avec un liquide violet mélangé à l'eau
 Non --> Vous pouvez interroger quelqu'un d'autre (il ne reste que Deniz à interroger)
 
 Question 5A(découle de oui à la Q4A): Souhaitez vous interroger Deniz ?
