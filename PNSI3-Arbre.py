@@ -79,7 +79,7 @@ if __name__ == "__main__":
     zeta_node.insert_droit(dico[14])
     
     
-#Troisième niveau de noeuds, eta ; theta / iota ; kappa / lambda ; mu /
+#Troisième niveau de noeuds, eta ; theta / iota ; kappa / lambda ; mu / nu ; xi
     eta_node = gamma_node.get_gauche()
     eta_node.insert_gauche(dico[15])
     eta_node.insert_droit(dico[16])
