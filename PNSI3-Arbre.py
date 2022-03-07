@@ -51,66 +51,71 @@ if __name__ == "__main__":
     racine.insert_droit(dico[2])
     
     
-#Premier niveau de noeuds, alpha / beta
+#Premier niveau de noeuds, alpha 
     alpha_node = racine.get_gauche()
     alpha_node.insert_gauche(dico[3])
     alpha_node.insert_droit(dico[4])
-
-    beta_node = racine.get_droit()
+    
+    
+#Deuxième niveau de noeuds, beta / gamma
+    beta_node = alpha_node.get_gauche()
     beta_node.insert_gauche(dico[5])
     beta_node.insert_droit(dico[6])
 
-
-#Deuxième niveau de noeuds, gamma ; delta / epsilon ; zeta
-    gamma_node = alpha_node.get_gauche()
+    gamma_node = alpha_node.get_droit()
     gamma_node.insert_gauche(dico[7])
     gamma_node.insert_droit(dico[8])
 
-    delta_node = alpha_node.get_droit()
+    
+#Troisième niveau de noeuds, delta ; epsilon / zeta ; eta
+    delta_node = beta_node.get_gauche()
     delta_node.insert_gauche(dico[9])
     delta_node.insert_droit(dico[10])
     
-    epsilon_node = beta_node.get_gauche()
+    epsilon_node = beta_node.get_droit()
     epsilon_node.insert_gauche(dico[11])
     epsilon_node.insert_droit(dico[12])
     
-    zeta_node = beta_node.get_droit()
+    zeta_node = gamma_node.get_gauche()
     zeta_node.insert_gauche(dico[13])
     zeta_node.insert_droit(dico[14])
     
-    
-#Troisième niveau de noeuds, eta ; theta / iota ; kappa / lambda ; mu / nu ; xi
-    eta_node = gamma_node.get_gauche()
+    eta_node = gamma_node.get_droit()
     eta_node.insert_gauche(dico[15])
     eta_node.insert_droit(dico[16])
     
-    theta_node = gamma_node.get_droit()
+    
+#Quatrième niveau de noeuds, theta ; iota / kappa ; lamda / mu ; nu / xi ; omicron
+    theta_node = delta_node.get_gauche()
     theta_node.insert_gauche(dico[17])
     theta_node.insert_droit(dico[18])
     
-    iota_node = delta_node.get_gauche()
+    iota_node = delta_node.get_droit()
     iota_node.insert_gauche(dico[19])
     iota_node.insert_droit(dico[20])
     
-    kappa_node = delta_node.get_droit()
+    kappa_node = epsilon_node.get_gauche()
     kappa_node.insert_gauche(dico[21])
     kappa_node.insert_droit(dico[22])
     
-    lambda_node = epsilon_node.get_gauche()
+    lambda_node = epsilon_node.get_droit()
     lambda_node.insert_gauche(dico[23])
     lambda_node.insert_droit(dico[24])
     
-    mu_node = epsilon_node.get_droit()
+    mu_node = zeta_node.get_gauche()
     mu_node.insert_gauche(dico[25])
     mu_node.insert_droit(dico[26])
     
-    nu_node = zeta_node.get_gauche()
+    nu_node = zeta_node.get_droit()
     nu_node.insert_gauche(dico[27])
     nu_node.insert_droit(dico[28])
     
-    xi_node = zeta_node.get_droit()
+    xi_node = eta_node.get_gauche()
     xi_node.insert_gauche(dico[29])
     xi_node.insert_droit(dico[30])
     
+    omicron_node = eta_node.get_droit()
+    omicron_node.insert_gauche(dico[31])
+    omicron_node.insert_droit(dico[32])
     
     print(racine)
