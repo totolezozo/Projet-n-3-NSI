@@ -74,6 +74,9 @@ Non --> Vous n'avez plus personne à interroger c'est la fin de l'interrogatoire
 
 Fin de la première étape
 
+
+
 Deuxième partie : inspection des pièces
 
+Question 1 : Maintenant que vous avez fini d'inerroger tout le monde, souhaitez faire une inspection des chambres pour vérifier les alibis de chacun 
 
