@@ -18,7 +18,7 @@ Question 3A(découle du oui à la Q2) : Désirez vous interroger Julie pour conf
 Oui --> Julie vous confirme les faits 
 Non --> Vous pouvez interroger quelqu'un d'autre 
 
-Question 3B(décvoule du non à la Q2) : Souhaitez vous interroger Julie ?
+Question 3B(découle du non à la Q2) : Souhaitez vous interroger Julie ?
 Oui --> Julie vous révèle qu'au moment du crime il était avec Thomas dans le salon en train de ranger des livres dans la bibliothèque
 Non --> Vous pouvez interroger quelqu'un d'autre
 
