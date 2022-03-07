@@ -44,19 +44,36 @@ Question 5A(découle de oui à la Q4A): Souhaitez vous interroger Margaux ?
 Oui --> Margaux vous explique qu'après avoir préparer la piqure habituelle d'Hervé, elle découvre son corps inanimé dans la baignoire avec un liquide violet mélangé à l'eau
 Non --> Vous n'avez plus personne à interroger c'est la fin de l'interrogatoire 
 
-Question 5C(découle de oui à la Q4B): Souhaitez vous interroger Margaux ? 
+Question 5C(découle de non à la Q4A): Souhaitez vous interroger Margaux ? 
 Oui --> Margaux vous explique qu'après avoir préparer la piqure habituelle d'Hervé, elle découvre son corps inanimé dans la baignoire avec un liquide violet mélangé à l'eau
 Non --> Vous n'avez plus personne à interroger c'est la fin de l'interrogatoire 
 
 Question 5C(découle de oui à la Q4B): Souhaitez vous interroger Margaux ? 
 Oui --> Margaux vous explique qu'après avoir préparer la piqure habituelle d'Hervé, elle découvre son corps inanimé dans la baignoire avec un liquide violet mélangé à l'eau
+Non --> Vous n'avez plus personne à interroger c'est la fin de l'interrogatoire
+
+Question 5D(découle de non à la Q4A): Souhaitez vous interroger Margaux ? 
+Oui --> Margaux vous explique qu'après avoir préparer la piqure habituelle d'Hervé, elle découvre son corps inanimé dans la baignoire avec un liquide violet mélangé à l'eau
 Non --> Vous n'avez plus personne à interroger c'est la fin de l'interrogatoire 
 
+Question 5E(découle de oui à la Q4C): Souhaitez vous interroger Margaux ? 
+Oui --> Margaux vous explique qu'après avoir préparer la piqure habituelle d'Hervé, elle découvre son corps inanimé dans la baignoire avec un liquide violet mélangé à l'eau
+Non --> Vous n'avez plus personne à interroger c'est la fin de l'interrogatoire 
+
+Question 5F(découle de non à la Q4C): Souhaitez vous interroger Margaux ? 
+Oui --> Margaux vous explique qu'après avoir préparer la piqure habituelle d'Hervé, elle découvre son corps inanimé dans la baignoire avec un liquide violet mélangé à l'eau
+Non --> Vous n'avez plus personne à interroger c'est la fin de l'interrogatoire 
+
+Question 5G(découle de oui à la Q4D): Souhaitez vous interroger Margaux ? 
+Oui --> Margaux vous explique qu'après avoir préparer la piqure habituelle d'Hervé, elle découvre son corps inanimé dans la baignoire avec un liquide violet mélangé à l'eau
+Non --> Vous n'avez plus personne à interroger c'est la fin de l'interrogatoire 
+
+Question 5H(découle de non à la Q4D): Souhaitez vous interroger Margaux ? 
+Oui --> Margaux vous explique qu'après avoir préparer la piqure habituelle d'Hervé, elle découvre son corps inanimé dans la baignoire avec un liquide violet mélangé à l'eau
+Non --> Vous n'avez plus personne à interroger c'est la fin de l'interrogatoire 
+
+Fin de la première étape
+
+Deuxième partie : inspection des pièces
 
 
-
-
-
-
-
-Deuxième partie : inspection des pièces 
