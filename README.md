@@ -3,7 +3,6 @@
 Projet scolaire de Terminale en lien avec la matière Numérique et Science de l'Informatique.
 
 
-
 Contexte : 
 Le joueur est un enquêteur et dois résoudre une affaire criminel. L'histoire se déroule à Puteaux dans la richissime demeure des Mercury. Hervé, le doyen de la famille et propriétaire d'une grande entreprise d'huile d'olive basée à Cassis, est retrouvé inanimé dans baignoire. C'est Margaux, l'infirmière qui était à sa charge qui a découvert le corps à environ 19h30 en l'appelant pour diner. Hervé a 3 enfants, une fille Julie et deux fils, Thomas et Deniz. Toute la famille était réuni pour la semaine de Noël. 
 
@@ -19,7 +18,7 @@ Question 3A(découle du oui à la Q2) : Désirez vous interroger Julie pour conf
 Oui --> Julie vous confirme les faits 
 Non --> Vous pouvez interroger quelqu'un d'autre 
 
-Question 3B(découle du non à la Q2) : Souhaitez vous interroger Julie ?
+Question 3B(décvoule du non à la Q2) : Souhaitez vous interroger Julie ?
 Oui --> Julie vous révèle qu'au moment du crime il était avec Thomas dans le salon en train de ranger des livres dans la bibliothèque
 Non --> Vous pouvez interroger quelqu'un d'autre
 
@@ -48,8 +47,10 @@ Oui --> Deniz vous dévoile qu'il était seul dans sa chambre en train de révis
 Non --> Vous pouvez interroger quelqu'un d'autre (il ne reste que Margaux, l'infirmière à interroger)
 
 
+Question 5C(découle de oui à la Q4B): Souhaitez vous interroger Margaux ? 
+Oui --> Margaux vous explique qu'après avoir préparer la piqure habituelle d'Hervé, elle découvre son corps inanimé dans la baignoire avec un liquide violet mélangé à l'eau
+Non --> Vous n'avez plus personne à interroger c'est la fin de l'interrogatoire 
 
-
-
-
-
+Question 5D(découle de non à la Q4B): Souhaitez vous interroger Margaux ? 
+Oui --> Margaux vous explique qu'après avoir préparer la piqure habituelle d'Hervé, elle découvre son corps inanimé dans la baignoire avec un liquide violet mélangé à l'eau
+Non --> Vous pouvez interroger quelqu'un d'autre (il ne reste que Deniz à interroger)
