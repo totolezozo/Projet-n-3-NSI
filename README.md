@@ -78,7 +78,24 @@ Fin de la première étape
 
 Deuxième partie : inspection des pièces
 
-Question 1 : Maintenant que vous avez fini d'inerroger tout le monde, souhaitez faire une inspection des chambres pour vérifier les alibis de chacun 
+Question 1 : Maintenant que vous avez fini d'inerroger tout le monde, souhaitez faire une inspection des chambres pour vérifier les alibis de chacun ?
+Oui --> Vous continuez votre enquête pour avoir plus de preuve
+Non --> Vous arrêter l'enquête ici et vos éléments ne sont pas suffisants pour accuser quelqu'un, vous êtes donc licencié
+
+Question 2(découle de oui à la Q1): Souhaitez vous inspecter la chambre de deniz ? 
+Oui --> Vous découvrez que les livres et cahiers de deniz sont toujours ouverts et que l'encre est à peine cèche ce qui confirme l'alibi de deniz
+Non --> Vous pouvez inspecter une autre pièce 
+
+Question 3A(découle de oui à la Q2): Souhaitez vous inspecter l'infirmerie où Margaux prépare ses piqures ? 
+Oui --> Vous découvrez que l'infirmerie était en ordre pour pouvoir faire la piqure et vous déduisez que de toute façon, Margaux n'ayant pas de part dans l'héritage, elle n'aurait pas de mobile de tuer Hervé
+Non --> Vous pouvez inspecter une autre pièce 
+
+Question 3A(découle de oui à la Q2): Souhaitez vous inspecter l'infirmerie où Margaux prépare ses piqures ? 
+Oui --> Vous découvrez que l'infirmerie était en ordre pour pouvoir faire la piqure et vous déduisez que de toute façon, Margaux n'ayant pas de part dans l'héritage, elle n'aurait pas de mobile de tuer Hervé
+Non --> Vous pouvez inspecter une autre pièce
+
+
+
 
 
 
