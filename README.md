@@ -80,3 +80,19 @@ Deuxième partie : inspection des pièces
 
 Question 1 : Maintenant que vous avez fini d'inerroger tout le monde, souhaitez faire une inspection des chambres pour vérifier les alibis de chacun 
 
+#Première Partie :
+dico[1] = {"Désirez-vous vous rendre sur les lieux du crime ? ","la mission continue","le chef de la police vous remplace sur cette mission et vous partez en vacances "} 
+dico[2] = {"Une fois sur les lieux du crime, souhaitez vous interroger Thomas l'ainé de la fraterie ?","Thomas vous révèle qu'au moment du crime il était avec Julie dans le salon en train de ranger des livres dans la bibliothèque","Vous pouvez interroger quelqu'un d'autre "}
+dico[3] = {"Désirez vous interroger Julie pour confirmer les dires de Thomas ?","Julie vous confirme les faits",""}
+dico[4] = {"","",""}
+dico[5] = {"","",""}
+dico[6] = {"","",""}
+dico[7] = {"","",""}
+dico[8] = {"","",""}
+dico[9] = {"","",""}
+dico[10] = {"","",""}
+dico[11] = {"","",""}
+dico[12] = {"","",""}
+dico[13] = {"","",""}
+dico[14] = {"","",""}
+dico[15] = {"","",""}
