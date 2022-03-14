@@ -80,19 +80,26 @@ Deuxième partie : inspection des pièces
 
 Question 1 : Maintenant que vous avez fini d'inerroger tout le monde, souhaitez faire une inspection des chambres pour vérifier les alibis de chacun 
 
-#Première Partie :
+
+
+
+Dictionnaire :
+
+Première Partie :
+
 dico[1] = {"Désirez-vous vous rendre sur les lieux du crime ? ","la mission continue","le chef de la police vous remplace sur cette mission et vous partez en vacances "} 
 dico[2] = {"Une fois sur les lieux du crime, souhaitez vous interroger Thomas l'ainé de la fraterie ?","Thomas vous révèle qu'au moment du crime il était avec Julie dans le salon en train de ranger des livres dans la bibliothèque","Vous pouvez interroger quelqu'un d'autre "}
-dico[3] = {"Désirez vous interroger Julie pour confirmer les dires de Thomas ?","Julie vous confirme les faits",""}
-dico[4] = {"","",""}
-dico[5] = {"","",""}
-dico[6] = {"","",""}
-dico[7] = {"","",""}
-dico[8] = {"","",""}
-dico[9] = {"","",""}
-dico[10] = {"","",""}
-dico[11] = {"","",""}
-dico[12] = {"","",""}
-dico[13] = {"","",""}
-dico[14] = {"","",""}
-dico[15] = {"","",""}
+dico[3] = {"Désirez vous interroger Julie pour confirmer les dires de Thomas ?","Julie vous confirme les faits","Vous pouvez interroger quelqu'un d'autre "}
+dico[4] = {"Souhaitez vous interroger Julie ?","Julie vous révèle qu'au moment du crime elle était avec Thomas dans le salon en train de ranger des livres dans la bibliothèque","Vous pouvez interroger quelqu'un d'autre"}
+dico[5] = {"Souhaitez vous inerroger Deniz ?","Deniz vous dévoile qu'il était seul dans sa chambre en train de réviser ses partiels","Vous pouvez interroger quelqu'un d'autre"}
+dico[6] = {"Souhaitez vous interroger Deniz ?","Deniz vous dévoile qu'il était seul dans sa chambre en train de réviser ses partiels","Vous pouvez interroger quelqu'un d'autre"}
+dico[7] = {"Souhaitez vous interroger Deniz ?","Deniz vous dévoile qu'il était seul dans sa chambre en train de réviser ses partiels","Vous pouvez interroger quelqu'un d'autre"}
+dico[8] = {"Souhaitez vous interroger Deniz ?","Deniz vous dévoile qu'il était seul dans sa chambre en train de réviser ses partiels","Vous pouvez interroger quelqu'un d'autre"}
+dico[9] = {"Souhaitez vous interroger Margaux ? ","Margaux vous explique qu'après avoir préparer la piqure habituelle d'Hervé, elle découvre son corps inanimé dans la baignoire avec un liquide violet mélangé à l'eau","Vous n'avez plus personne à interroger c'est la fin de l'interrogatoire"}
+dico[10] = {"Souhaitez vous interroger Margaux ? ","Margaux vous explique qu'après avoir préparer la piqure habituelle d'Hervé, elle découvre son corps inanimé dans la baignoire avec un liquide violet mélangé à l'eau","Vous n'avez plus personne à interroger c'est la fin de l'interrogatoire"}
+dico[11] = {"Souhaitez vous interroger Margaux ? ","Margaux vous explique qu'après avoir préparer la piqure habituelle d'Hervé, elle découvre son corps inanimé dans la baignoire avec un liquide violet mélangé à l'eau","Vous n'avez plus personne à interroger c'est la fin de l'interrogatoire"}
+dico[12] = {"Souhaitez vous interroger Margaux ? ","Margaux vous explique qu'après avoir préparer la piqure habituelle d'Hervé, elle découvre son corps inanimé dans la baignoire avec un liquide violet mélangé à l'eau","Vous n'avez plus personne à interroger c'est la fin de l'interrogatoire"}
+dico[13] = {"Souhaitez vous interroger Margaux ? ","Margaux vous explique qu'après avoir préparer la piqure habituelle d'Hervé, elle découvre son corps inanimé dans la baignoire avec un liquide violet mélangé à l'eau","Vous n'avez plus personne à interroger c'est la fin de l'interrogatoire"}
+dico[14] = {"Souhaitez vous interroger Margaux ? ","Margaux vous explique qu'après avoir préparer la piqure habituelle d'Hervé, elle découvre son corps inanimé dans la baignoire avec un liquide violet mélangé à l'eau","Vous n'avez plus personne à interroger c'est la fin de l'interrogatoire"}
+dico[15] = {"Souhaitez vous interroger Margaux ? ","Margaux vous explique qu'après avoir préparer la piqure habituelle d'Hervé, elle découvre son corps inanimé dans la baignoire avec un liquide violet mélangé à l'eau","Vous n'avez plus personne à interroger c'est la fin de l'interrogatoire"}
+dico[16] = {"Souhaitez vous interroger Margaux ? ","Margaux vous explique qu'après avoir préparer la piqure habituelle d'Hervé, elle découvre son corps inanimé dans la baignoire avec un liquide violet mélangé à l'eau","Vous n'avez plus personne à interroger c'est la fin de l'interrogatoire"}
