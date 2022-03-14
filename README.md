@@ -90,10 +90,57 @@ Question 3A(découle de oui à la Q2): Souhaitez vous inspecter l'infirmerie où
 Oui --> Vous découvrez que l'infirmerie était en ordre pour pouvoir faire la piqure et vous déduisez que de toute façon, Margaux n'ayant pas de part dans l'héritage, elle n'aurait pas de mobile de tuer Hervé
 Non --> Vous pouvez inspecter une autre pièce 
 
-Question 3A(découle de oui à la Q2): Souhaitez vous inspecter l'infirmerie où Margaux prépare ses piqures ? 
+Question 3B(découle de non à la Q2): Souhaitez vous inspecter l'infirmerie où Margaux prépare ses piqures ? 
 Oui --> Vous découvrez que l'infirmerie était en ordre pour pouvoir faire la piqure et vous déduisez que de toute façon, Margaux n'ayant pas de part dans l'héritage, elle n'aurait pas de mobile de tuer Hervé
 Non --> Vous pouvez inspecter une autre pièce
 
+Question 4A(découle de oui à la question Q3A): Souhaitez vous vérifier si les livres dans la bibliothèque du salon sont bien rangés ? 
+Oui --> Vous découvrez qu'il n'y a pas de livre dans cette bibliothèque mais des dessins d'Hervé 
+Non --> Vous pouvez inspecter une autre pièce 
+
+Question 4B(découle de non à la question Q3A): Souhaitez vous vérifier si les livres dans la bibliothèque du salon sont bien rangés ? 
+Oui --> Vous découvrez qu'il n'y a pas de livre dans cette bibliothèque mais des dessins d'Hervé 
+Non --> Vous pouvez inspecter une autre pièce 
+
+Question 4C(découle de oui à la question Q3B): Souhaitez vous vérifier si les livres dans la bibliothèque du salon sont bien rangés ? 
+Oui --> Vous découvrez qu'il n'y a pas de livre dans cette bibliothèque mais des dessins d'Hervé 
+Non --> Vous pouvez inspecter une autre pièce 
+
+Question 4D(découle de non à la question Q3B): Souhaitez vous vérifier si les livres dans la bibliothèque du salon sont bien rangés ? 
+Oui --> Vous découvrez qu'il n'y a pas de livre dans cette bibliothèque mais des dessins d'Hervé 
+Non --> Vous pouvez inspecter une autre pièce 
+
+Question 5A(découle de oui à la Q4A): Souhaitez vous inspecter la chambre de Julie ? 
+Oui --> Vous découvrez que dans le fond d'un tirroir une substance dont le labo vous confirme sa dangerosité si elle est diluée dans l'eau
+Non --> C'est la fin de l'inspection des pièces, à l'aide des éléments que vous disposez il vous faut désignez un coupable 
+
+Question 5B(découle de non à la Q4A): Souhaitez vous inspecter la chambre de Julie ? 
+Oui --> Vous découvrez que dans le fond d'un tirroir une substance dont le labo vous confirme sa dangerosité si elle est diluée dans l'eau
+Non --> C'est la fin de l'inspection des pièces, à l'aide des éléments que vous disposez il vous faut désignez un coupable 
+
+Question 5C(découle de oui à la Q4B): Souhaitez vous inspecter la chambre de Julie ? 
+Oui --> Vous découvrez que dans le fond d'un tirroir une substance dont le labo vous confirme sa dangerosité si elle est diluée dans l'eau
+Non --> C'est la fin de l'inspection des pièces, à l'aide des éléments que vous disposez il vous faut désignez un coupable 
+
+Question 5D(découle de non à la Q4B): Souhaitez vous inspecter la chambre de Julie ? 
+Oui --> Vous découvrez que dans le fond d'un tirroir une substance dont le labo vous confirme sa dangerosité si elle est diluée dans l'eau
+Non --> C'est la fin de l'inspection des pièces, à l'aide des éléments que vous disposez il vous faut désignez un coupable 
+
+Question 5E(découle de oui à la Q4C): Souhaitez vous inspecter la chambre de Julie ? 
+Oui --> Vous découvrez que dans le fond d'un tirroir une substance dont le labo vous confirme sa dangerosité si elle est diluée dans l'eau
+Non --> C'est la fin de l'inspection des pièces, à l'aide des éléments que vous disposez il vous faut désignez un coupable 
+
+Question 5F(découle de non à la Q4C): Souhaitez vous inspecter la chambre de Julie ? 
+Oui --> Vous découvrez que dans le fond d'un tirroir une substance dont le labo vous confirme sa dangerosité si elle est diluée dans l'eau
+Non --> C'est la fin de l'inspection des pièces, à l'aide des éléments que vous disposez il vous faut désignez un coupable 
+
+Question 5G(découle de oui à la Q4D): Souhaitez vous inspecter la chambre de Julie ? 
+Oui --> Vous découvrez que dans le fond d'un tirroir une substance dont le labo vous confirme sa dangerosité si elle est diluée dans l'eau
+Non --> C'est la fin de l'inspection des pièces, à l'aide des éléments que vous disposez il vous faut désignez un coupable 
+
+Question 5H(découle de non à la Q4D): Souhaitez vous inspecter la chambre de Julie ? 
+Oui --> Vous découvrez que dans le fond d'un tirroir une substance dont le labo vous confirme sa dangerosité si elle est diluée dans l'eau
+Non --> C'est la fin de l'inspection des pièces, à l'aide des éléments que vous disposez il vous faut désignez un coupable 
 
 
 
