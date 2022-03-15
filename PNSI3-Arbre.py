@@ -1,5 +1,4 @@
 
-
 #Class pour créer l'arbre qui servira à faire les suites de questions
 class CreationArbre:
     """Définition de la classe arbre Binaire à partir du site de
@@ -119,3 +118,82 @@ if __name__ == "__main__":
     omicron_node.insert_droit(dico[32])
     
     print(racine)
+
+
+
+#Création du second arbre, soit le second chapitre 
+#Racine de l'arbre, création des 2 premières branches
+    racinebis = CreationArbre(dic[0])
+    racinebis.insert_gauche(dic[1])
+    racinebis.insert_droit(dic[2])
+    
+    
+#Premier niveau de noeuds, alpha 
+    ah_node = racinebis.get_gauche()
+    ah_node.insert_gauche(dic[3])
+    ah_node.insert_droit(dic[4])
+    
+    
+#Deuxième niveau de noeuds, beta / gamma
+    bay_node = ah_node.get_gauche()
+    bay_node.insert_gauche(dic[5])
+    bay_node.insert_droit(dic[6])
+
+    tsay_node = ah_node.get_droit()
+    tsay_node.insert_gauche(dic[7])
+    tsay_node.insert_droit(dic[8])
+
+    
+#Troisième niveau de noeuds, delta ; epsilon / zeta ; eta
+    day_node = bay_node.get_gauche()
+    day_node.insert_gauche(dic[9])
+    day_node.insert_droit(dic[10])
+    
+    ay_node = bay_node.get_droit()
+    ay_node.insert_gauche(dic[11])
+    ay_node.insert_droit(dic[12])
+    
+    eff_node = tsay_node.get_gauche()
+    eff_node.insert_gauche(dic[13])
+    eff_node.insert_droit(dic[14])
+    
+    gay_node = tsay_node.get_droit()
+    gay_node.insert_gauche(dic[15])
+    gay_node.insert_droit(dic[16])
+    
+    
+#Quatrième niveau de noeuds, theta ; iota / kappa ; lamda / mu ; nu / xi ; omicron
+    ha_node = day_node.get_gauche()
+    ha_node.insert_gauche(dic[17])
+    ha_node.insert_droit(dic[18])
+    
+    e_node = day_node.get_droit()
+    e_node.insert_gauche(dic[19])
+    e_node.insert_droit(dic[20])
+    
+    kappa_node = epsilon_node.get_gauche()
+    kappa_node.insert_gauche(dico[21])
+    kappa_node.insert_droit(dico[22])
+    
+    lambda_node = epsilon_node.get_droit()
+    lambda_node.insert_gauche(dico[23])
+    lambda_node.insert_droit(dico[24])
+    
+    mu_node = zeta_node.get_gauche()
+    mu_node.insert_gauche(dico[25])
+    mu_node.insert_droit(dico[26])
+    
+    nu_node = zeta_node.get_droit()
+    nu_node.insert_gauche(dico[27])
+    nu_node.insert_droit(dico[28])
+    
+    xi_node = eta_node.get_gauche()
+    xi_node.insert_gauche(dico[29])
+    xi_node.insert_droit(dico[30])
+    
+    omicron_node = eta_node.get_droit()
+    omicron_node.insert_gauche(dico[31])
+    omicron_node.insert_droit(dico[32])
+    
+    print(racinebis)
+
