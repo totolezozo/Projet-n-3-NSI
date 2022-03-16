@@ -171,29 +171,29 @@ if __name__ == "__main__":
     e_node.insert_gauche(dic[19])
     e_node.insert_droit(dic[20])
     
-    kappa_node = epsilon_node.get_gauche()
-    kappa_node.insert_gauche(dico[21])
-    kappa_node.insert_droit(dico[22])
+    yacht_node = ay_node.get_gauche()
+    kappa_node.insert_gauche(dic[21])
+    kappa_node.insert_droit(dic[22])
     
-    lambda_node = epsilon_node.get_droit()
-    lambda_node.insert_gauche(dico[23])
-    lambda_node.insert_droit(dico[24])
+    car_node = ay_node.get_droit()
+    car_node.insert_gauche(dic[23])
+    car_node.insert_droit(dic[24])
     
-    mu_node = zeta_node.get_gauche()
-    mu_node.insert_gauche(dico[25])
-    mu_node.insert_droit(dico[26])
+    ell_node = eff_node.get_gauche()
+    ell_node.insert_gauche(dic[25])
+    ell_node.insert_droit(dic[26])
     
-    nu_node = zeta_node.get_droit()
-    nu_node.insert_gauche(dico[27])
-    nu_node.insert_droit(dico[28])
+    em_node = eff_node.get_droit()
+    em_node.insert_gauche(dic[27])
+    em_node.insert_droit(dic[28])
     
-    xi_node = eta_node.get_gauche()
-    xi_node.insert_gauche(dico[29])
-    xi_node.insert_droit(dico[30])
+    en_node = gay_node.get_gauche()
+    en_node.insert_gauche(dic[29])
+    en_node.insert_droit(dic[30])
     
-    omicron_node = eta_node.get_droit()
-    omicron_node.insert_gauche(dico[31])
-    omicron_node.insert_droit(dico[32])
+    oh_node = gay_node.get_droit()
+    oh_node.insert_gauche(dic[31])
+    oh_node.insert_droit(dic[32])
     
     print(racinebis)
 
