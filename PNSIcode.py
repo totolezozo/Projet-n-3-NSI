@@ -124,40 +124,6 @@ if __name__ == "__main__":
     eta_node.insert_gauche(dico[15])
     eta_node.insert_droit(dico[16])
     
-    
-#Quatrième niveau de noeuds, theta ; iota / kappa ; lamda / mu ; nu / xi ; omicron
-    theta_node = delta_node.get_gauche()
-    theta_node.insert_gauche(dico[17])
-    theta_node.insert_droit(dico[18])
-    
-    iota_node = delta_node.get_droit()
-    iota_node.insert_gauche(dico[19])
-    iota_node.insert_droit(dico[20])
-    
-    kappa_node = epsilon_node.get_gauche()
-    kappa_node.insert_gauche(dico[21])
-    kappa_node.insert_droit(dico[22])
-    
-    lambda_node = epsilon_node.get_droit()
-    lambda_node.insert_gauche(dico[23])
-    lambda_node.insert_droit(dico[24])
-    
-    mu_node = zeta_node.get_gauche()
-    mu_node.insert_gauche(dico[25])
-    mu_node.insert_droit(dico[26])
-    
-    nu_node = zeta_node.get_droit()
-    nu_node.insert_gauche(dico[27])
-    nu_node.insert_droit(dico[28])
-    
-    xi_node = eta_node.get_gauche()
-    xi_node.insert_gauche(dico[29])
-    xi_node.insert_droit(dico[30])
-    
-    omicron_node = eta_node.get_droit()
-    omicron_node.insert_gauche(dico[31])
-    omicron_node.insert_droit(dico[32])
-    
     print(racine)
 
 
@@ -202,38 +168,5 @@ if __name__ == "__main__":
     gay_node.insert_gauche(dic[15])
     gay_node.insert_droit(dic[16])
     
-    
-#Quatrième niveau de noeuds, theta ; iota / kappa ; lamda / mu ; nu / xi ; omicron
-    ha_node = day_node.get_gauche()
-    ha_node.insert_gauche(dic[17])
-    ha_node.insert_droit(dic[18])
-    
-    e_node = day_node.get_droit()
-    e_node.insert_gauche(dic[19])
-    e_node.insert_droit(dic[20])
-    
-    yacht_node = ay_node.get_gauche()
-    kappa_node.insert_gauche(dic[21])
-    kappa_node.insert_droit(dic[22])
-    
-    car_node = ay_node.get_droit()
-    car_node.insert_gauche(dic[23])
-    car_node.insert_droit(dic[24])
-    
-    ell_node = eff_node.get_gauche()
-    ell_node.insert_gauche(dic[25])
-    ell_node.insert_droit(dic[26])
-    
-    em_node = eff_node.get_droit()
-    em_node.insert_gauche(dic[27])
-    em_node.insert_droit(dic[28])
-    
-    en_node = gay_node.get_gauche()
-    en_node.insert_gauche(dic[29])
-    en_node.insert_droit(dic[30])
-    
-    oh_node = gay_node.get_droit()
-    oh_node.insert_gauche(dic[31])
-    oh_node.insert_droit(dic[32])
     
     print(racinebis)
