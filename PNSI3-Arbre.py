@@ -82,7 +82,7 @@ if __name__ == "__main__":
     eta_node.insert_gauche(dico[14])
     eta_node.insert_droit(dico[15])
     
-#Quatrième niveau
+#Quatrième niveau de noeuds, theta ; iota / kappa ; lambda / mu ; nu / xi ; omicron
     theta_node = delta_node.get_gauche()
     theta_node.insert_gauche(dico[16])
     theta_node.insert_droit(dico[17])
@@ -115,7 +115,7 @@ if __name__ == "__main__":
     omicron_node.insert_gauche(dico[30])
     omicron_node.insert_droit(dico[31])
     
-#Cinquième niveau
+#Cinquième niveau de noeuds, pi / rho ; sigma / tau ; upsilon / phi ; chi / psi ; omega / ah
     pi_node = theta_node.get_gauche()
     pi_node.insert_gauche(dico[32])
     pi_node.insert_droit(dico[33])
@@ -156,7 +156,7 @@ if __name__ == "__main__":
     ah_node.insert_gauche(dico[50])
     ah_node.insert_droit(dico[51])
     
-#Sixième niveau
+#Sixième niveau de noeuds, bay ; tsay / day / ay ; eff / gay ; ha 
     bay_node = tau_node.get_gauche()
     bay_node.insert_gauche(dico[52])
     bay_node.insert_droit(dico[53])
@@ -185,7 +185,7 @@ if __name__ == "__main__":
     ha_node.insert_gauche(dico[64])
     ha_node.insert_droit(dico[65])
     
-#Septième niveau   
+#Septième niveau de noeuds, ee / yacht / car ; ell 
     ee_node = bay_node.get_gauche
     ee_node.insert_gauche(dico[66])
     ee_node.insert_droit(dico[67])
