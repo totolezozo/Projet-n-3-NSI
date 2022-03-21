@@ -1,4 +1,4 @@
-#C'est bon j'ai fini, finalement c'est qu'un seul arbre et quand ya un espace entre deux blocs de lignes c'est genre qu'on passe à l'étage d'en dessous dans l'arbre
+
 dico[1] = {"Une fois sur les lieux du crime, souhaitez vous interroger Thomas l'ainé de la fraterie ?","Thomas vous révèle qu'au moment du crime il était avec Julie dans le salon en train de ranger des livres dans la bibliothèque","Vous pouvez interroger quelqu'un d'autre "}
 
 dico[2] = {"Désirez vous interroger Julie pour confirmer les dires de Thomas ?","Julie vous confirme les faits","Vous pouvez faire autre chose"}
