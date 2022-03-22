@@ -307,10 +307,8 @@ fenetre.geometry("1400x1000")
 fenetre.bind('<Escape>', lambda e: fenetre.destroy())
 # On affiche l'image du fond du jeu
 
-fenetre.title("image en fond")
-img_fond = PhotoImage(file = "C:\\Users\\Thomas\\Documents\\Mon_image.png")
-img_label = Label(image = img_fond)
-img_label.pack()
+
+
 
 def game_over():
     fenetre.destroy()
@@ -393,7 +391,7 @@ from tkinter.messagebox import *# boîte de dialogue
 from tkinter.filedialog import *
 
 def Verification():
-    if tueur.get() == 'Thomas' or tueur.get() == 'thomas':
+    if tueur.get() == 'Julie' or tueur.get() == 'julie':
         showinfo('Résultat','Tu as gagné')
         Mafenetre.destroy()
     else:
