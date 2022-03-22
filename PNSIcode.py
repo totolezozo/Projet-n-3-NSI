@@ -375,8 +375,8 @@ Frame1.pack(side=LEFT, padx=50, pady=10)
 Frame2 = Frame(Frame0, borderwidth=2, relief=GROOVE)
 Frame2.pack(side=RIGHT, padx=50, pady=10)
 
-bouton1 = Button(Frame1, command = Button1, text="situation1")
-bouton2 = Button(Frame2, command = Button2, text="situation2")
+bouton1 = Button(Frame1, command = Button1, text="Oui")
+bouton2 = Button(Frame2, command = Button2, text="Non")
 bouton1.pack()
 bouton2.pack()
 
