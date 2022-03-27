@@ -302,22 +302,30 @@ ell_node.insert_droit(dico[73])
 #################################################################################################################################################################
 
 
-fenetre = Tk()
-fenetre.geometry("1400x1000")
-fenetre.bind('<Escape>', lambda e: fenetre.destroy())
+fenetre = Tk()                                                                      #creation de la fenetre principale
+fenetre.geometry("1200x900")                                                       #on definit la taille de la fenetre
+fenetre.bind('<Escape>', lambda e: fenetre.destroy())                               #Si la touche echap est presser sur la fenetre on va fermer celle ci
+fenetre.title("Cluedo")
+fenetre.configure(bg='black') 
+
 # On affiche l'image du fond du jeu
-
-
-
-
-def game_over():
-    fenetre.destroy()
-    
+img_fond = PhotoImage(file = "C:\\Users\\Thomas\\Documents\\JEU_img.png")
+img_label = Label(image = img_fond,borderwidth=0)
+img_label.pack()
+  
 question = StringVar()
 situation1 = StringVar()
 situation2 = StringVar()
-
+situation = StringVar()
 def texte(dico):
+    """
+
+    Args:
+        dico (dict): les valeurs associé a la clé dans le dictionnaire
+
+    Returns:
+        question,situation1,situation2 (string): le texte de la question et des deux reponses possible
+    """
     question = ""
     situation1 = ""
     situation2 = ""
@@ -327,24 +335,35 @@ def texte(dico):
     situation2 = dico["reponseB"]
     return question,situation1,situation2
             
-question_bis,situation1_bis,situation2_bis = texte(dico[1])
+question_bis,situation1_bis,situation2_bis = texte(dico[1])                         #On recupere le texte de depart pour le question et les deux reponses
+
+#on initilaise les stringvar(c'est une string var tkinter c'est pour ca que l'on utilise .set())
+
 question.set(question_bis)
-situation1.set(situation1_bis)
+situation1.set(situation1_bis)                                                       
 situation2.set(situation2_bis)
 
+#les fonction button1() et button2()  permettent de changer les texte afficher le fonctionnement est le meme c'est le fils choisis qui change
 
-def Button1():
-    global alpha_node
-    if alpha_node.get_gauche() != None :
-        alpha_node = alpha_node.get_gauche()
-        question_bis,situation1_bis,situation2_bis = texte(alpha_node.get_valeur())
-        question.set(question_bis)
+def Button1():  
+    global alpha_node                                                               #alpha-node est global car c'est le seul moyen de garder la position dans l'arbre  
+    question_bis,situation1_bis,situation2_bis = texte(alpha_node.get_valeur())
+    situation.set(situation1_bis)
+    if alpha_node.get_gauche() != None :                                            #c'est la condition d'arret du jeu
+        alpha_node = alpha_node.get_gauche()                                        #On va definir la racine comme le fils gauche dans l'arbre de la racine actuel
+        question_bis,situation1_bis,situation2_bis = texte(alpha_node.get_valeur()) #On recupere les information du dictionnaire associé a la nouvelle racine
+        # On definit les nouvelle valeur du texte
+        question.set(question_bis)  
         situation1.set(situation1_bis)
         situation2.set(situation2_bis)
+    #si il n'y a pas de fils gauche on met fin au jeu
     else :
-        game_over()
+        fenetre.destroy()
+        
 def Button2():
     global alpha_node
+    question_bis,situation1_bis,situation2_bis = texte(alpha_node.get_valeur())
+    situation.set(situation2_bis)
     if alpha_node.get_droit() != None :
         alpha_node = alpha_node.get_droit()
         question_bis,situation1_bis,situation2_bis = texte(alpha_node.get_valeur())
@@ -352,40 +371,46 @@ def Button2():
         situation1.set(situation1_bis)
         situation2.set(situation2_bis)
     else :
-        game_over()
+        fenetre.destroy()
 
 
 #################################################################################################################################################################
 #################################################################################################################################################################
 #################################################################################################################################################################
     
-# frame 0
+# frame 0 on y affiche la question et les deux autre frame
 Frame0 = Frame(fenetre,borderwidth=2, relief=GROOVE)
 Frame0.pack(side=BOTTOM, padx=50, pady=50)
 
 Label(Frame0,textvariable=question).pack(side = TOP, padx=10, pady=10)
 label = Label()
-label.pack()
+label.pack(ipadx = 200)
 
-# frame 1
+# frame 1 on y affiche la reponse 1
+
 Frame1 = Frame(Frame0, borderwidth=2, relief=GROOVE)
-Frame1.pack(side=LEFT, padx=50, pady=10)
+Frame1.pack(padx=50, pady=10)
 
-# frame 2
-Frame2 = Frame(Frame0, borderwidth=2, relief=GROOVE)
-Frame2.pack(side=RIGHT, padx=50, pady=10)
+#on creer les deux bouton qui permet de choisir
+bouton1 = Button(Frame1, command = Button1, text="situation1")
+bouton2 = Button(Frame1, command = Button2, text="situation2")
+bouton1.pack(side=LEFT, padx=50, pady=10)
+bouton2.pack(side=RIGHT, padx=50, pady=10)
 
-bouton1 = Button(Frame1, command = Button1, text="Oui")
-bouton2 = Button(Frame2, command = Button2, text="Non")
-bouton1.pack()
-bouton2.pack()
 
-# Ajout de labels
-Label(Frame1, textvariable=situation1).pack(padx=10, pady=10)
-Label(Frame2, textvariable=situation2).pack(padx=10, pady=10)
-label.pack()
+#label.pack()
+
+Label(Frame0,textvariable=situation).pack(side = TOP, padx=10, pady=10)
+label2 = Label()
+label2.pack(side = BOTTOM)
 
 fenetre.mainloop()
+
+#################################################################################################################################################################
+#################################################################################################################################################################
+#################################################################################################################################################################
+
+#une fois le jeu terminer on affiche une nouvelle fenetre qui permet de demander qui est le tueur
 
 from tkinter.messagebox import *# boîte de dialogue
 from tkinter.filedialog import *
@@ -398,22 +423,29 @@ def Verification():
         showinfo('Résultat','tu as perdu')
         Mafenetre.destroy()
 
-# Création de la fenêtre principale (main window)
+# Création de la fenêtre
 Mafenetre = Tk()
-Mafenetre.title('Identification requise')
+Mafenetre.title('Réponse')
+Mafenetre.geometry("1200x900")
+Mafenetre.bind('<Escape>', lambda e: fenetre.destroy())  
+Mafenetre.configure(bg='black') 
 
-# Création d'un widget Label (texte 'Mot de passe')
+img_fond = PhotoImage(file = "C:\\Users\\Thomas\\Documents\\JEU_img.png")
+img_label = Label(image = img_fond, borderwidth = 0)
+img_label.pack()
+
+# Création d'un widget Label (texte 'QUI EST LE TUEUR')
 Label1 = Label(Mafenetre, text = 'Qui est le tueur ?')
-Label1.pack(side = LEFT, padx = 5, pady = 5)
+Label1.pack(padx = 5, pady = 5)
 
 # Création d'un widget Entry (champ de saisie)
 tueur= StringVar()
 Champ = Entry(Mafenetre, textvariable= tueur, bg ='bisque', fg='maroon')
 Champ.focus_set()
-Champ.pack(side = LEFT, padx = 5, pady = 5)
+Champ.pack(padx = 5, pady = 5)
 
 # Création d'un widget Button (bouton Valider)
 Bouton = Button(Mafenetre, text ='Valider', command = Verification)
-Bouton.pack(side = LEFT, padx = 5, pady = 5)
+Bouton.pack(padx = 5, pady = 5)
 
 Mafenetre.mainloop()
