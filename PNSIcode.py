@@ -309,7 +309,7 @@ fenetre.title("Cluedo")
 fenetre.configure(bg='black') 
 
 # On affiche l'image du fond du jeu
-img_fond = PhotoImage(file = "C:\\Users\\Thomas\\Documents\\JEU_img.png")
+img_fond = PhotoImage(file = "JEU_img.png")
 img_label = Label(image = img_fond,borderwidth=0)
 img_label.pack()
   
@@ -392,8 +392,8 @@ Frame1 = Frame(Frame0, borderwidth=2, relief=GROOVE)
 Frame1.pack(padx=50, pady=10)
 
 #on creer les deux bouton qui permet de choisir
-bouton1 = Button(Frame1, command = Button1, text="situation1")
-bouton2 = Button(Frame1, command = Button2, text="situation2")
+bouton1 = Button(Frame1, command = Button1, text="oui")
+bouton2 = Button(Frame1, command = Button2, text="non")
 bouton1.pack(side=LEFT, padx=50, pady=10)
 bouton2.pack(side=RIGHT, padx=50, pady=10)
 
@@ -430,7 +430,7 @@ Mafenetre.geometry("1200x900")
 Mafenetre.bind('<Escape>', lambda e: fenetre.destroy())  
 Mafenetre.configure(bg='black') 
 
-img_fond = PhotoImage(file = "C:\\Users\\Thomas\\Documents\\JEU_img.png")
+img_fond = PhotoImage(file = "JEU_img.png")
 img_label = Label(image = img_fond, borderwidth = 0)
 img_label.pack()
 
