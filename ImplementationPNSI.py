@@ -1,10 +1,10 @@
 
-dico[1] = {"question" : "Une fois sur les lieux du crime, souhaitez vous interroger Thomas l'aine de la fraterie ?","Thomas vous révèle qu au moment du crime il etait avec Julie dans le salon en train de ranger des livres dans la bibliotheque","Vous pouvez interroger quelqu un d autre "}
+dico[1] = {"question" : "Une fois sur les lieux du crime, souhaitez vous interroger Thomas l'aine de la fraterie ?","reponseA" :"Thomas vous révèle qu au moment du crime il etait avec Julie dans le salon en train de ranger des livres dans la bibliotheque","Vous pouvez interroger quelqu un d autre "}
 
-dico[2] = {"question" : "Desirez vous interroger Julie pour confirmer les dires de Thomas ?","Julie vous confirme les faits","Vous pouvez faire autre chose"}
-dico[3] = {"question" : "Souhaitez vous interroger Deniz ?","Deniz vous devoile qu il était seul dans sa chambre en train de reviser ses partiels","Vous pouvez faire autre chose"}
+dico[2] = {"question" : "Desirez vous interroger Julie pour confirmer les dires de Thomas ?","reponseA" :"Julie vous confirme les faits","Vous pouvez faire autre chose"}
+dico[3] = {"question" : "Souhaitez vous interroger Deniz ?","reponseA" :"Deniz vous devoile qu il était seul dans sa chambre en train de reviser ses partiels","Vous pouvez faire autre chose"}
 
-dico[4] = {"question" : "Souhaitez vous verifier si les livres dans la bibliotheque du salon sont bien ranges ?", "Vous decouvrez qu il n y a pas de livre dans cette bibliotheque mais des dessins d Herve", "Vous pouvez faire autre chose"}
+dico[4] = {"question" : "Souhaitez vous verifier si les livres dans la bibliotheque du salon sont bien ranges ?","reponseA" : "Vous decouvrez qu il n y a pas de livre dans cette bibliotheque mais des dessins d Herve", "Vous pouvez faire autre chose"}
 dico[5] = {"question" : "Souhaitez vous interroger Deniz ?","Deniz vous devoile qu il était seul dans sa chambre en train de reviser ses partiels","Vous pouvez faire autre chose"}
 dico[6] = {"question" : "Souhaitez vous inspecter la chambre de Deniz ?","Vous decouvrez que les livres et cahiers de Deniz sont toujours ouverts et que l encre est a peine seche ce qui confirme l alibi de deniz","Vous pouvez faire autre chose" }
 dico[7] = {"question" : "Souhaitez vous interroger Margaux ? ","Margaux vous explique qu apres avoir preparer la piqure habituelle d Herve, elle decouvre son corps inanime dans la baignoire avec un liquide violet melange a l eau","Vous pouvez faire autre chose"}
