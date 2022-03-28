@@ -1,5 +1,5 @@
 """
-Code principale qui regroupe les différents codes du projets 
+Code principale qui regroupe les différents codes du projet
 """
 from ast import Global
 from tkinter import *
