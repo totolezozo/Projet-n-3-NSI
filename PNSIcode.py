@@ -1,3 +1,11 @@
+# -*- coding: utf-8 -*-
+"""
+Created on Mon Mar 28 09:06:28 2022
+
+@author: tchometon
+"""
+
+
 """
 Code principale qui regroupe les différents codes du projets 
 """
@@ -8,86 +16,87 @@ from tkinter import *
 #################################################################################################################################################################
 #################################################################################################################################################################
 dico = {}
-dico[1] = {"question" :"Une fois sur les lieux du crime, souhaitez vous interroger Thomas l'ainé de la fraterie ?","reponseA" :"Thomas vous révèle qu'au moment du crime il était avec Julie dans le salon en train de ranger des livres dans la bibliothèque","reponseB" : "Vous pouvez interroger quelqu'un d'autre "}
+dico[1] = {"question" : "Une fois sur les lieux du crime, souhaitez vous interroger Thomas l'aine de la fraterie ?","reponseA" :"Thomas vous révèle qu au moment du crime il etait avec Julie dans le salon en train de ranger des livres dans la bibliotheque","reponseB" :"Vous pouvez interroger quelqu un d autre "}
 
-dico[2] = {"question" :"Désirez vous interroger Julie pour confirmer les dires de Thomas ?","reponseA" :"Julie vous confirme les faits","reponseB" :"Vous pouvez faire autre chose"}
-dico[3] = {"question" :"Souhaitez vous inerroger Deniz ?","reponseA" :"Deniz vous dévoile qu'il était seul dans sa chambre en train de réviser ses partiels","reponseB" :"Vous pouvez faire autre chose"}
+dico[2] = {"question" : "Desirez vous interroger Julie pour confirmer les dires de Thomas ?","reponseA" :"Julie vous confirme les faits","reponseB" :"Vous pouvez faire autre chose"}
+dico[3] = {"question" : "Souhaitez vous interroger Deniz ?","reponseA" :"Deniz vous devoile qu il était seul dans sa chambre en train de reviser ses partiels","reponseB" :"Vous pouvez faire autre chose"}
 
-dico[4] = {"question" :"Souhaitez vous vérifier si les livres dans la bibliothèque du salon sont bien rangés ?", "reponseA" :"Vous découvrez qu'il n'y a pas de livre dans cette bibliothèque mais des dessins d'Hervé", "reponseB" :"Vous pouvez faire autre chose"}
-dico[5] = {"question" :"Souhaitez vous inerroger Deniz ?","reponseA" :"Deniz vous dévoile qu'il était seul dans sa chambre en train de réviser ses partiels","reponseB" :"Vous pouvez faire autre chose"}
-dico[6] = {"question" :"Souhaitez vous inspecter la chambre de deniz ?","reponseA" :"Vous découvrez que les livres et cahiers de deniz sont toujours ouverts et que l'encre est à peine sèche ce qui confirme l'alibi de deniz","reponseB" :"Vous pouvez faire autre chose" }
-dico[7] = {"question" :"Souhaitez vous interroger Margaux ? ","reponseA" :"Margaux vous explique qu'après avoir préparer la piqure habituelle d'Hervé, elle découvre son corps inanimé dans la baignoire avec un liquide violet mélangé à l'eau","reponseB" :"Vous pouvez faire autre chose"}
+dico[4] = {"question" : "Souhaitez vous verifier si les livres dans la bibliotheque du salon sont bien ranges ?","reponseA" : "Vous decouvrez qu il n y a pas de livre dans cette bibliotheque mais des dessins d Herve", "reponseB" :"Vous pouvez faire autre chose"}
+dico[5] = {"question" : "Souhaitez vous interroger Deniz ?","reponseA" :"Deniz vous devoile qu il était seul dans sa chambre en train de reviser ses partiels","reponseB" :"Vous pouvez faire autre chose"}
+dico[6] = {"question" : "Souhaitez vous inspecter la chambre de Deniz ?","reponseA" :"Vous decouvrez que les livres et cahiers de Deniz sont toujours ouverts et que l encre est a peine seche ce qui confirme l alibi de deniz","reponseB" :"Vous pouvez faire autre chose" }
+dico[7] = {"question" : "Souhaitez vous interroger Margaux ? ","reponseA" :"Margaux vous explique qu apres avoir preparer la piqure habituelle d Herve, elle decouvre son corps inanime dans la baignoire avec un liquide violet melange a l eau","reponseB" :"Vous pouvez faire autre chose"}
 
-dico[8] = {"question" :"Souhaitez vous inspecter la chambre de Julie ?", "reponseA" :"Vous découvrez que dans le fond d'un tirroir une substance dont le labo vous confirme sa dangerosité si elle est diluée dans l'eau", "reponseB" :"Vous pouvez faire autre chose"}
-dico[9] = {"question" :"Souhaitez vous interroger Margaux ? ","reponseA" :"Margaux vous explique qu'après avoir préparer la piqure habituelle d'Hervé, elle découvre son corps inanimé dans la baignoire avec un liquide violet mélangé à l'eau","reponseB" :"Vous pouvez faire autre chose"}
-dico[10] = {"question" :"Souhaitez vous inspecter la chambre de deniz ?","reponseA" :"Vous découvrez que les livres et cahiers de deniz sont toujours ouverts et que l'encre est à peine sèche ce qui confirme l'alibi de deniz","reponseB" :"Vous pouvez faire autre chose" }
-dico[11] = {"question" :"Souhaitez vous interroger Margaux ? ","reponseA" :"Margaux vous explique qu'après avoir préparer la piqure habituelle d'Hervé, elle découvre son corps inanimé dans la baignoire avec un liquide violet mélangé à l'eau","reponseB" :"Vous pouvez faire autre chose"}
-dico[12] = {"question" :"Souhaitez vous interroger Margaux ? ","reponseA" :"Margaux vous explique qu'après avoir préparer la piqure habituelle d'Hervé, elle découvre son corps inanimé dans la baignoire avec un liquide violet mélangé à l'eau","reponseB" :"Vous pouvez faire autre chose"}
-dico[13] = {"question" :"Souhaitez vous interroger Julie ?","reponseA" :"Julie vous révèle qu'au moment du crime elle était avec Thomas dans le salon en train de ranger des livres dans la bibliothèque","reponseB" :"Vous pouvez faire autre chose"}
-dico[14] = {"question" :"Souhaitez vous inspecter l'infirmerie où Margaux prépare ses piqures ?","reponseA" :"Vous découvrez que l'infirmerie était en ordre pour pouvoir faire la piqure et vous déduisez que de toute façon, Margaux n'ayant pas de part dans l'héritage, elle n'aurait pas de mobile de tuer Hervé","reponseB" :"Vous pouvez faire autre chose"}
-dico[15] = {"question" :"Souhaitez vous interroger Julie ?","reponseA" :"Julie vous révèle qu'au moment du crime elle était avec Thomas dans le salon en train de ranger des livres dans la bibliothèque","reponseB" :"Vous pouvez faire autre chose"}
+dico[8] = {"question" : "Souhaitez vous inspecter la chambre de Julie ?","reponseA" :"Vous decouvrez que dans le fond d'un tirroir une substance dont le labo vous confirme sa dangerosite si elle est diluee dans l'eau", "reponseB" :"Vous pouvez faire autre chose"}
+dico[9] = {"question" : "Souhaitez vous interroger Margaux ? ","reponseA" :"Margaux vous explique qu apres avoir preparer la piqure habituelle d Herve, elle decouvre son corps inanime dans la baignoire avec un liquide violet melange a l eau","reponseB" :"Vous pouvez faire autre chose"}
+dico[10] = {"question" : "Souhaitez vous inspecter la chambre de Deniz ?","reponseA" :"Vous découvrez que les livres et cahiers de Deniz sont toujours ouverts et que l encre est a peine seche ce qui confirme l alibi de deniz","reponseB" :"Vous pouvez faire autre chose" }
+dico[11] = {"question" : "Souhaitez vous interroger Margaux ? ","reponseA" :"Margaux vous explique qu apres avoir preparer la piqure habituelle d Herve, elle decouvre son corps inanime dans la baignoire avec un liquide violet melange a l eau","reponseB" :"Vous pouvez faire autre chose"}
+dico[12] = {"question" : "Souhaitez vous interroger Margaux ? ","reponseA" :"Margaux vous explique qu apres avoir preparer la piqure habituelle d Herve, elle decouvre son corps inanime dans la baignoire avec un liquide violet melange a l eau","reponseB" :"Vous pouvez faire autre chose"}
+dico[13] = {"question" : "Souhaitez vous interroger Julie ?","reponseA" :"Julie vous revele qu au moment du crime elle était avec Thomas dans le salon en train de ranger des livres dans la bibliotheque","reponseB" :"Vous pouvez faire autre chose"}
+dico[14] = {"question" : "Souhaitez vous inspecter l infirmerie ou Margaux prepare ses piqures ?","reponseA" :"Vous decouvrez que l infirmerie etait en ordre pour pouvoir faire la piqure et vous deduisez que de toute façon, Margaux n ayant pas de part dans l heritage, elle n aurait pas de mobile de tuer Herve","reponseB" :"Vous pouvez faire autre chose"}
+dico[15] = {"question" : "Souhaitez vous interroger Julie ?","reponseA" :"Julie vous revele qu au moment du crime elle était avec Thomas dans le salon en train de ranger des livres dans la bibliotheque","reponseB" :"Vous pouvez faire autre chose"}
 
-dico[16] = {"question" :"Souhaitez vous inerroger Deniz ?","reponseA" :"Deniz vous dévoile qu'il était seul dans sa chambre en train de réviser ses partiels","reponseB" :"Vous pouvez faire autre chose"}
-dico[17] = {"question" :"Souhaitez vous interroger Margaux ? ","reponseA" :"Margaux vous explique qu'après avoir préparer la piqure habituelle d'Hervé, elle découvre son corps inanimé dans la baignoire avec un liquide violet mélangé à l'eau","reponseB" :"Vous pouvez faire autre chose"}
-dico[18] = {"question" :"Souhaitez vous inspecter l'infirmerie où Margaux prépare ses piqures ?","reponseA" :"Vous découvrez que l'infirmerie était en ordre pour pouvoir faire la piqure et vous déduisez que de toute façon, Margaux n'ayant pas de part dans l'héritage, elle n'aurait pas de mobile de tuer Hervé","reponseB" :"Vous pouvez faire autre chose"}
-dico[19] = {"question" :"C'est la fin de l'enquête"}
-dico[20] = {"question" :"Souhaitez vous interroger Margaux ? ","reponseA" :"Margaux vous explique qu'après avoir préparer la piqure habituelle d'Hervé, elle découvre son corps inanimé dans la baignoire avec un liquide violet mélangé à l'eau","reponseB" :"Vous pouvez faire autre chose"}
-dico[21] = {"question" :"Souhaitez vous interroger Margaux ? ","reponseA" :"Margaux vous explique qu'après avoir préparer la piqure habituelle d'Hervé, elle découvre son corps inanimé dans la baignoire avec un liquide violet mélangé à l'eau","reponseB" :"Vous pouvez faire autre chose"}
-dico[22] = {"question" :"Souhaitez vous inspecter l'infirmerie où Margaux prépare ses piqures ?","reponseA" :"Vous découvrez que l'infirmerie était en ordre pour pouvoir faire la piqure et vous déduisez que de toute façon, Margaux n'ayant pas de part dans l'héritage, elle n'aurait pas de mobile de tuer Hervé","reponseB" :"Vous pouvez faire autre chose"}
-dico[23] = {"question" :"C'est la fin de l'enquête"}
-dico[24] = {"question" :"Souhaitez vous inspecter l'infirmerie où Margaux prépare ses piqures ?","reponseA" :"Vous découvrez que l'infirmerie était en ordre pour pouvoir faire la piqure et vous déduisez que de toute façon, Margaux n'ayant pas de part dans l'héritage, elle n'aurait pas de mobile de tuer Hervé","reponseB" :"Vous pouvez faire autre chose"}
-dico[25] = {"question" :"Souhaitez vous interroger Julie ?","reponseA" :"Julie vous révèle qu'au moment du crime elle était avec Thomas dans le salon en train de ranger des livres dans la bibliothèque","reponseB" :"Vous pouvez faire autre chose"}
-dico[26] = {"question" :"Souhaitez vous vérifier si les livres dans la bibliothèque du salon sont bien rangés ?", "reponseA" :"Vous découvrez qu'il n'y a pas de livre dans cette bibliothèque mais des dessins d'Hervé", "reponseB" :"Vous pouvez faire autre chose"}
-dico[27] = {"question" :"Souhaitez vous interroger Margaux ? ","reponseA" :"Margaux vous explique qu'après avoir préparer la piqure habituelle d'Hervé, elle découvre son corps inanimé dans la baignoire avec un liquide violet mélangé à l'eau","reponseB" :"Vous pouvez faire autre chose"}
-dico[28] = {"question" :"Souhaitez vous interroger Julie ?","reponseA" :"Julie vous révèle qu'au moment du crime elle était avec Thomas dans le salon en train de ranger des livres dans la bibliothèque","reponseB" :"Vous pouvez faire autre chose"}
-dico[29] = {"question" :"Souhaitez vous interroger Julie ?","reponseA" :"Julie vous révèle qu'au moment du crime elle était avec Thomas dans le salon en train de ranger des livres dans la bibliothèque","reponseB" :"Vous pouvez faire autre chose"}
-dico[30] = {"question" :"Souhaitez vous vérifier si les livres dans la bibliothèque du salon sont bien rangés ?", "reponseA" :"Vous découvrez qu'il n'y a pas de livre dans cette bibliothèque mais des dessins d'Hervé","reponseB" : "Vous pouvez faire autre chose"}
-dico[31] = {"question" :"C'est la fin de l'enquête"}
+dico[16] = {"question" : "Souhaitez vous interroger Deniz ?","reponseA" :"Deniz vous devoile qu il était seul dans sa chambre en train de reviser ses partiels","reponseB" :"Vous pouvez faire autre chose"}
+dico[17] = {"question" : "Souhaitez vous interroger Margaux ? ","reponseA" :"Margaux vous explique qu apres avoir preparer la piqure habituelle d Herve, elle decouvre son corps inanime dans la baignoire avec un liquide violet melange a l eau","reponseB" :"Vous pouvez faire autre chose"}
+dico[18] = {"question" : "Souhaitez vous inspecter l infirmerie ou Margaux prepare ses piqures ?","reponseA" :"Vous decouvrez que l infirmerie etait en ordre pour pouvoir faire la piqure et vous deduisez que de toute façon, Margaux n ayant pas de part dans l heritage, elle n aurait pas de mobile de tuer Herve","reponseB" :"Vous pouvez faire autre chose"}
+dico[19] = {"question" : "C est la fin de l enquete"}
+dico[20] = {"question" : "Souhaitez vous interroger Margaux ? ","reponseA" :"Margaux vous explique qu apres avoir preparer la piqure habituelle d Herve, elle decouvre son corps inanime dans la baignoire avec un liquide violet melange a l eau","reponseB" :"Vous pouvez faire autre chose"}
+dico[21] = {"question" : "Souhaitez vous interroger Margaux ? ","reponseA" :"Margaux vous explique qu apres avoir preparer la piqure habituelle d Herve, elle decouvre son corps inanime dans la baignoire avec un liquide violet melange a l eau","reponseB" :"Vous pouvez faire autre chose"}
+dico[22] = {"question" : "Souhaitez vous inspecter l infirmerie ou Margaux prepare ses piqures ?","reponseA" :"Vous decouvrez que l infirmerie etait en ordre pour pouvoir faire la piqure et vous deduisez que de toute façon, Margaux n ayant pas de part dans l heritage, elle n aurait pas de mobile de tuer Herve","reponseB" :"Vous pouvez faire autre chose"}
+dico[23] = {"question" : "C est la fin de l enquete"}
+dico[24] = {"question" : "Souhaitez vous inspecter l infirmerie ou Margaux prepare ses piqures ?","reponseA" :"Vous decouvrez que l infirmerie etait en ordre pour pouvoir faire la piqure et vous deduisez que de toute façon, Margaux n ayant pas de part dans l heritage, elle n aurait pas de mobile de tuer Herve","reponseB" :"Vous pouvez faire autre chose"}
+dico[25] = {"question" : "Souhaitez vous interroger Julie ?","reponseA" :"Julie vous revele qu au moment du crime elle était avec Thomas dans le salon en train de ranger des livres dans la bibliotheque","reponseB" :"Vous pouvez faire autre chose"}
+dico[26] = {"question" : "Souhaitez vous verifier si les livres dans la bibliotheque du salon sont bien ranges ?", "reponseA" :"Vous decouvrez qu il n y a pas de livre dans cette bibliotheque mais des dessins d Herve", "reponseB" :"Vous pouvez faire autre chose"}
+dico[27] = {"question" : "Souhaitez vous interroger Margaux ? ","reponseA" :"Margaux vous explique qu apres avoir preparer la piqure habituelle d Herve, elle decouvre son corps inanime dans la baignoire avec un liquide violet melange a l eau","reponseB" :"Vous pouvez faire autre chose"}
+dico[28] = {"question" : "Souhaitez vous interroger Julie ?","reponseA" :"Julie vous revele qu au moment du crime elle était avec Thomas dans le salon en train de ranger des livres dans la bibliotheque","reponseB" :"Vous pouvez faire autre chose"}
+dico[29] = {"question" : "Souhaitez vous interroger Julie ?","reponseA" :"Julie vous revele qu au moment du crime elle était avec Thomas dans le salon en train de ranger des livres dans la bibliotheque","reponseB" :"Vous pouvez faire autre chose"}
+dico[30] = {"question" : "Souhaitez vous verifier si les livres dans la bibliotheque du salon sont bien ranges ?", "reponseA" :"Vous decouvrez qu il n y a pas de livre dans cette bibliotheque mais des dessins d Herve", "reponseB" :"Vous pouvez faire autre chose"}
+dico[31] = {"question" : "C est la fin de l enquete"}
 
-dico[32] = {"question" :"Souhaitez vous inspecter la chambre de deniz ?","reponseA" :"Vous découvrez que les livres et cahiers de deniz sont toujours ouverts et que l'encre est à peine sèche ce qui confirme l'alibi de deniz","reponseB" :"Vous pouvez faire autre chose" }
-dico[33] = {"question" :"C'est la fin de l'enquête"}
-dico[34] = {"question" :"Souhaitez vous inspecter l'infirmerie où Margaux prépare ses piqures ?","reponseA" :"Vous découvrez que l'infirmerie était en ordre pour pouvoir faire la piqure et vous déduisez que de toute façon, Margaux n'ayant pas de part dans l'héritage, elle n'aurait pas de mobile de tuer Hervé","reponseB" :"Vous pouvez faire autre chose"}
-dico[35] = {"question" :"C'est la fin de l'enquête"}
-dico[36] = {"question" :"Souhaitez vous inspecter l'infirmerie où Margaux prépare ses piqures ?","reponseA" :"Vous découvrez que l'infirmerie était en ordre pour pouvoir faire la piqure et vous déduisez que de toute façon, Margaux n'ayant pas de part dans l'héritage, elle n'aurait pas de mobile de tuer Hervé","reponseB" :"Vous pouvez faire autre chose"}
-dico[37] = {"question" :"C'est la fin de l'enquête"}
-dico[38] = {"question" :"Souhaitez vous interroger Julie ?","reponseA" :"Julie vous révèle qu'au moment du crime elle était avec Thomas dans le salon en train de ranger des livres dans la bibliothèque","reponseB" :"Vous pouvez faire autre chose"}
-dico[39] = {"question" :"Souhaitez vous interroger Julie ?","reponseA" :"Julie vous révèle qu'au moment du crime elle était avec Thomas dans le salon en train de ranger des livres dans la bibliothèque","reponseB" :"Vous pouvez faire autre chose"}
-dico[40] = {"question" :"Souhaitez vous vérifier si les livres dans la bibliothèque du salon sont bien rangés ?", "reponseA" :"Vous découvrez qu'il n'y a pas de livre dans cette bibliothèque mais des dessins d'Hervé", "reponseB" :"Vous pouvez faire autre chose"}
-dico[41] = {"question" :"C'est la fin de l'enquête"}
-dico[42] = {"question" :"Souhaitez vous inspecter la chambre de Julie ?", "reponseA" :"Vous découvrez que dans le fond d'un tirroir une substance dont le labo vous confirme sa dangerosité si elle est diluée dans l'eau", "reponseB" :"Vous pouvez faire autre chose"}
-dico[43] = {"question" :"Souhaitez vous interroger Margaux ? ","reponseA" :"Margaux vous explique qu'après avoir préparer la piqure habituelle d'Hervé, elle découvre son corps inanimé dans la baignoire avec un liquide violet mélangé à l'eau","reponseB" :"Vous pouvez faire autre chose"}
-dico[44] = {"question" :"Souhaitez vous inspecter l'infirmerie où Margaux prépare ses piqures ?","reponseA" :"Vous découvrez que l'infirmerie était en ordre pour pouvoir faire la piqure et vous déduisez que de toute façon, Margaux n'ayant pas de part dans l'héritage, elle n'aurait pas de mobile de tuer Hervé","reponseB" :"Vous pouvez faire autre chose"}
-dico[45] = {"question" :"C'est la fin de l'enquête"}
-dico[46] = {"question" :"Souhaitez vous vérifier si les livres dans la bibliothèque du salon sont bien rangés ?","reponseA" : "Vous découvrez qu'il n'y a pas de livre dans cette bibliothèque mais des dessins d'Hervé", "reponseB" :"Vous pouvez faire autre chose"}
-dico[47] = {"question" :"C'est la fin de l'enquête"}
-dico[48] = {"question" :"Souhaitez vous vérifier si les livres dans la bibliothèque du salon sont bien rangés ?","reponseA" : "Vous découvrez qu'il n'y a pas de livre dans cette bibliothèque mais des dessins d'Hervé", "reponseB" :"Vous pouvez faire autre chose"}
-dico[49] = {"question" :"C'est la fin de l'enquête"}
-dico[50] = {"question" :"Souhaitez vous inspecter la chambre de Julie ?","reponseA" : "Vous découvrez que dans le fond d'un tirroir une substance dont le labo vous confirme sa dangerosité si elle est diluée dans l'eau", "reponseB" :"Vous pouvez faire autre chose"}
-dico[51] = {"question" :"C'est la fin de l'enquête"}
+dico[32] = {"question" : "Souhaitez vous inspecter la chambre de Deniz ?","reponseA" :"Vous decouvrez que les livres et cahiers de Deniz sont toujours ouverts et que l encre est a peine seche ce qui confirme l alibi de deniz","reponseB" :"Vous pouvez faire autre chose" }
+dico[33] = {"question" : "C est la fin de l enquete"}
+dico[34] = {"question" : "Souhaitez vous inspecter l infirmerie ou Margaux prepare ses piqures ?","reponseA" :"Vous decouvrez que l infirmerie etait en ordre pour pouvoir faire la piqure et vous deduisez que de toute façon, Margaux n ayant pas de part dans l heritage, elle n aurait pas de mobile de tuer Herve","reponseB" :"Vous pouvez faire autre chose"}
+dico[35] = {"question" : "C est la fin de l enquete"}
+dico[36] = {"question" : "Souhaitez vous inspecter l infirmerie ou Margaux prepare ses piqures ?","reponseA" :"Vous decouvrez que l infirmerie etait en ordre pour pouvoir faire la piqure et vous deduisez que de toute façon, Margaux n ayant pas de part dans l heritage, elle n aurait pas de mobile de tuer Herve","reponseB" :"Vous pouvez faire autre chose"}
+dico[37] = {"question" : "C est la fin de l enquete"}
+dico[38] = {"question" : "Souhaitez vous interroger Julie ?","reponseA" :"Julie vous revele qu au moment du crime elle était avec Thomas dans le salon en train de ranger des livres dans la bibliotheque","reponseB" :"Vous pouvez faire autre chose"}
+dico[39] = {"question" : "Souhaitez vous interroger Julie ?","reponseA" :"Julie vous revele qu au moment du crime elle était avec Thomas dans le salon en train de ranger des livres dans la bibliotheque","reponseB" :"Vous pouvez faire autre chose"}
+dico[40] = {"question" : "Souhaitez vous verifier si les livres dans la bibliotheque du salon sont bien ranges ?", "reponseA" :"Vous decouvrez qu il n y a pas de livre dans cette bibliotheque mais des dessins d Herve", "reponseB" :"Vous pouvez faire autre chose"}
+dico[41] = {"question" : "C est la fin de l enquete"}
+dico[42] = {"question" : "Souhaitez vous inspecter la chambre de Julie ?", "reponseA" :"Vous decouvrez que dans le fond d'un tirroir une substance dont le labo vous confirme sa dangerosite si elle est diluee dans l'eau", "reponseB" :"Vous pouvez faire autre chose"}
+dico[43] = {"question" : "Souhaitez vous interroger Margaux ? ","reponseA" :"Margaux vous explique qu apres avoir preparer la piqure habituelle d Herve, elle decouvre son corps inanime dans la baignoire avec un liquide violet melange a l eau","reponseB" :"Vous pouvez faire autre chose"}
+dico[44] = {"question" : "Souhaitez vous inspecter l infirmerie ou Margaux prepare ses piqures ?","reponseA" :"Vous decouvrez que l infirmerie etait en ordre pour pouvoir faire la piqure et vous deduisez que de toute façon, Margaux n ayant pas de part dans l heritage, elle n aurait pas de mobile de tuer Herve","reponseB" :"Vous pouvez faire autre chose"}
+dico[45] = {"question" : "C est la fin de l enquete"}
+dico[46] = {"question" : "Souhaitez vous verifier si les livres dans la bibliotheque du salon sont bien ranges ?", "reponseA" :"Vous decouvrez qu il n y a pas de livre dans cette bibliotheque mais des dessins d Herve", "reponseB" :"Vous pouvez faire autre chose"}
+dico[47] = {"question" : "C est la fin de l enquete"}
+dico[48] = {"question" : "Souhaitez vous verifier si les livres dans la bibliotheque du salon sont bien ranges ?", "reponseA" :"Vous decouvrez qu il n y a pas de livre dans cette bibliotheque mais des dessins d Herve", "reponseB" :"Vous pouvez faire autre chose"}
+dico[49] = {"question" : "C est la fin de l enquete"}
+dico[50] = {"question" : "Souhaitez vous inspecter la chambre de Julie ?", "reponseA" :"Vous decouvrez que dans le fond d'un tirroir une substance dont le labo vous confirme sa dangerosite si elle est diluee dans l'eau","reponseB" : "Vous pouvez faire autre chose"}
+dico[51] = {"question" : "C est la fin de l enquete"}
 
-dico[52] = {"question" :"Souhaitez vous vérifier si les livres dans la bibliothèque du salon sont bien rangés ?","reponseA" : "Vous découvrez qu'il n'y a pas de livre dans cette bibliothèque mais des dessins d'Hervé", "reponseB" :"Vous pouvez faire autre chose"}
-dico[53] = {"question" :"C'est la fin de l'enquête"}
-dico[54] = {"question" :"Souhaitez vous vérifier si les livres dans la bibliothèque du salon sont bien rangés ?", "reponseA" :"Vous découvrez qu'il n'y a pas de livre dans cette bibliothèque mais des dessins d'Hervé", "reponseB" :"Vous pouvez faire autre chose"}
-dico[55] = {"question" :"C'est la fin de l'enquête"}
-dico[56] = {"question" :"Souhaitez vous inspecter la chambre de Julie ?", "reponseA" :"Vous découvrez que dans le fond d'un tirroir une substance dont le labo vous confirme sa dangerosité si elle est diluée dans l'eau", "reponseB" :"Vous pouvez faire autre chose"}
-dico[57] = {"question" :"C'est la fin de l'enquête"}
-dico[58] = {"question" :"Souhaitez vous interroger Margaux ? ","reponseA" :"Margaux vous explique qu'après avoir préparer la piqure habituelle d'Hervé, elle découvre son corps inanimé dans la baignoire avec un liquide violet mélangé à l'eau","reponseB" :"Vous pouvez faire autre chose"}
-dico[59] = {"question" :"Souhaitez vous interroger Margaux ? ","reponseA" :"Margaux vous explique qu'après avoir préparer la piqure habituelle d'Hervé, elle découvre son corps inanimé dans la baignoire avec un liquide violet mélangé à l'eau","reponseB" :"Vous pouvez faire autre chose"}
-dico[60] = {"question" :"Souhaitez vous inspecter l'infirmerie où Margaux prépare ses piqures ?","reponseA" :"Vous découvrez que l'infirmerie était en ordre pour pouvoir faire la piqure et vous déduisez que de toute façon, Margaux n'ayant pas de part dans l'héritage, elle n'aurait pas de mobile de tuer Hervé","reponseB" :"Vous pouvez faire autre chose"}
-dico[61] = {"question" :"C'est la fin de l'enquête"}
-dico[62] = {"question" :"Souhaitez vous inspecter la chambre de Julie ?", "reponseA" :"Vous découvrez que dans le fond d'un tirroir une substance dont le labo vous confirme sa dangerosité si elle est diluée dans l'eau", "reponseB" :"Vous pouvez faire autre chose"}
-dico[63] = {"question" :"C'est la fin de l'enquête"}
-dico[64] = {"question" :"Souhaitez vous inspecter la chambre de Julie ?", "reponseA" :"Vous découvrez que dans le fond d'un tirroir une substance dont le labo vous confirme sa dangerosité si elle est diluée dans l'eau","reponseB" : "Vous pouvez faire autre chose"}
-dico[65] = {"question" :"C'est la fin de l'enquête"}
+dico[52] = {"question" : "Souhaitez vous verifier si les livres dans la bibliotheque du salon sont bien ranges ?", "reponseA" :"Vous decouvrez qu il n y a pas de livre dans cette bibliotheque mais des dessins d Herve","reponseB" : "Vous pouvez faire autre chose"}
+dico[53] = {"question" : "C est la fin de l enquete"}
+dico[54] = {"question" : "Souhaitez vous verifier si les livres dans la bibliotheque du salon sont bien ranges ?","reponseA" : "Vous decouvrez qu il n y a pas de livre dans cette bibliotheque mais des dessins d Herve", "reponseB" :"Vous pouvez faire autre chose"}
+dico[55] = {"question" : "C est la fin de l enquete"}
+dico[56] = {"question" : "Souhaitez vous inspecter la chambre de Julie ?", "reponseA" :"Vous decouvrez que dans le fond d'un tirroir une substance dont le labo vous confirme sa dangerosite si elle est diluee dans l'eau", "reponseB" :"Vous pouvez faire autre chose"}
+dico[57] = {"question" : "C est la fin de l enquete"}
+dico[58] = {"question" : "Souhaitez vous interroger Margaux ? ","reponseA" :"Margaux vous explique qu apres avoir preparer la piqure habituelle d Herve, elle decouvre son corps inanime dans la baignoire avec un liquide violet melange a l eau","reponseB" :"Vous pouvez faire autre chose"}
+dico[59] = {"question" : "Souhaitez vous interroger Margaux ? ","reponseA" :"Margaux vous explique qu apres avoir preparer la piqure habituelle d Herve, elle decouvre son corps inanime dans la baignoire avec un liquide violet melange a l eau","reponseB" :"Vous pouvez faire autre chose"}
+dico[60] = {"question" : "Souhaitez vous inspecter l infirmerie ou Margaux prepare ses piqures ?","reponseA" :"Vous decouvrez que l infirmerie etait en ordre pour pouvoir faire la piqure et vous deduisez que de toute façon, Margaux n ayant pas de part dans l heritage, elle n aurait pas de mobile de tuer Herve","reponseB" :"Vous pouvez faire autre chose"}
+dico[61] = {"question" : "C est la fin de l enquete"}
+dico[62] = {"question" : "Souhaitez vous inspecter la chambre de Julie ?","reponseA" : "Vous decouvrez que dans le fond d'un tirroir une substance dont le labo vous confirme sa dangerosite si elle est diluee dans l'eau", "reponseB" :"Vous pouvez faire autre chose"}
+dico[63] = {"question" : "C est la fin de l enquete"}
+dico[64] = {"question" : "Souhaitez vous inspecter la chambre de Julie ?", "reponseA" :"Vous decouvrez que dans le fond d'un tirroir une substance dont le labo vous confirme sa dangerosite si elle est diluee dans l'eau", "reponseB" :"Vous pouvez faire autre chose"}
+dico[65] = {"question" : "C est la fin de l enquete"}
 
-dico[66] = {"question" :"Souhaitez vous inspecter la chambre de Julie ?", "reponseA" :"Vous découvrez que dans le fond d'un tirroir une substance dont le labo vous confirme sa dangerosité si elle est diluée dans l'eau", "reponseB" :"Vous pouvez faire autre chose"}
-dico[67] = {"question" :"C'est la fin de l'enquête"}
-dico[68] = {"question" :"Souhaitez vous inspecter la chambre de Julie ?", "reponseA" :"Vous découvrez que dans le fond d'un tirroir une substance dont le labo vous confirme sa dangerosité si elle est diluée dans l'eau", "reponseB" :"Vous pouvez faire autre chose"}
-dico[69] = {"question" :"C'est la fin de l'enquête"}
-dico[70] = {"question" :"Souhaitez vous inspecter l'infirmerie où Margaux prépare ses piqures ?","reponseA" :"Vous découvrez que l'infirmerie était en ordre pour pouvoir faire la piqure et vous déduisez que de toute façon, Margaux n'ayant pas de part dans l'héritage, elle n'aurait pas de mobile de tuer Hervé","reponseB" :"Vous pouvez faire autre chose"}
-dico[71] = {"question" :"C'est la fin de l'enquête"}
-dico[72] = {"question" :"Souhaitez vous inspecter l'infirmerie où Margaux prépare ses piqures ?","reponseA" :"Vous découvrez que l'infirmerie était en ordre pour pouvoir faire la piqure et vous déduisez que de toute façon, Margaux n'ayant pas de part dans l'héritage, elle n'aurait pas de mobile de tuer Hervé","reponseB" :"Vous pouvez faire autre chose"}
-dico[73] = {"question" :"C'est la fin de l'enquête"}
+dico[66] = {"question" : "Souhaitez vous inspecter la chambre de Julie ?","reponseA" : "Vous decouvrez que dans le fond d'un tirroir une substance dont le labo vous confirme sa dangerosite si elle est diluee dans l'eau","reponseB" : "Vous pouvez faire autre chose"}
+dico[67] = {"question" : "C est la fin de l enquete"}
+dico[68] = {"question" : "Souhaitez vous inspecter la chambre de Julie ?","reponseA" : "Vous decouvrez que dans le fond d'un tirroir une substance dont le labo vous confirme sa dangerosite si elle est diluee dans l'eau","reponseB" : "Vous pouvez faire autre chose"}
+dico[69] = {"question" : "C est la fin de l enquete"}
+dico[70] = {"question" : "Souhaitez vous inspecter l infirmerie ou Margaux prepare ses piqures ?","reponseA" :"Vous decouvrez que l infirmerie etait en ordre pour pouvoir faire la piqure et vous deduisez que de toute façon, Margaux n ayant pas de part dans l heritage, elle n aurait pas de mobile de tuer Herve","reponseB" :"Vous pouvez faire autre chose"}
+dico[71] = {"question" : "C est la fin de l enquete"}
+dico[72] = {"question" : "Souhaitez vous inspecter l infirmerie ou Margaux prepare ses piqures ?","reponseA" :"Vous decouvrez que l infirmerie etait en ordre pour pouvoir faire la piqure et vous deduisez que de toute façon, Margaux n ayant pas de part dans l heritage, elle n aurait pas de mobile de tuer Herve","reponseB" :"Vous pouvez faire autre chose"}
+dico[73] = {"question" : "C est la fin de l enquete"}
+
 
 #################################################################################################################################################################
 #################################################################################################################################################################
@@ -309,7 +318,7 @@ fenetre.title("Cluedo")
 fenetre.configure(bg='black') 
 
 # On affiche l'image du fond du jeu
-img_fond = PhotoImage(file = "C:\\Users\\Thomas\\Documents\\JEU_img.png")
+img_fond = PhotoImage(file = "C:\\Users\\tchometon\\Documents\\JEU_img.png")
 img_label = Label(image = img_fond,borderwidth=0)
 img_label.pack()
   
@@ -317,12 +326,11 @@ question = StringVar()
 situation1 = StringVar()
 situation2 = StringVar()
 situation = StringVar()
+
 def texte(dico):
     """
-
     Args:
         dico (dict): les valeurs associé a la clé dans le dictionnaire
-
     Returns:
         question,situation1,situation2 (string): le texte de la question et des deux reponses possible
     """
@@ -358,6 +366,7 @@ def Button1():
         situation2.set(situation2_bis)
     #si il n'y a pas de fils gauche on met fin au jeu
     else :
+        
         fenetre.destroy()
         
 def Button2():
@@ -379,7 +388,7 @@ def Button2():
 #################################################################################################################################################################
     
 # frame 0 on y affiche la question et les deux autre frame
-Frame0 = Frame(fenetre,borderwidth=2, relief=GROOVE)
+Frame0 = Frame(fenetre,borderwidth=0, relief=GROOVE)
 Frame0.pack(side=BOTTOM, padx=50, pady=50)
 
 Label(Frame0,textvariable=question).pack(side = TOP, padx=10, pady=10)
@@ -388,12 +397,12 @@ label.pack(ipadx = 200)
 
 # frame 1 on y affiche la reponse 1
 
-Frame1 = Frame(Frame0, borderwidth=2, relief=GROOVE)
+Frame1 = Frame(Frame0, borderwidth=0, relief=GROOVE)
 Frame1.pack(padx=50, pady=10)
 
 #on creer les deux bouton qui permet de choisir
-bouton1 = Button(Frame1, command = Button1, text="situation1")
-bouton2 = Button(Frame1, command = Button2, text="situation2")
+bouton1 = Button(Frame1, command = Button1, text="Oui")
+bouton2 = Button(Frame1, command = Button2, text="Non")
 bouton1.pack(side=LEFT, padx=50, pady=10)
 bouton2.pack(side=RIGHT, padx=50, pady=10)
 
@@ -430,7 +439,7 @@ Mafenetre.geometry("1200x900")
 Mafenetre.bind('<Escape>', lambda e: fenetre.destroy())  
 Mafenetre.configure(bg='black') 
 
-img_fond = PhotoImage(file = "C:\\Users\\Thomas\\Documents\\JEU_img.png")
+img_fond = PhotoImage(file = "C:\\Users\\tchometon\\Documents\\JEU_img.png")
 img_label = Label(image = img_fond, borderwidth = 0)
 img_label.pack()
 
