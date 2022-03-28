@@ -1,5 +1,5 @@
 
-dico[1] = {"Une fois sur les lieux du crime, souhaitez vous interroger Thomas l'aine de la fraterie ?","Thomas vous révèle qu au moment du crime il etait avec Julie dans le salon en train de ranger des livres dans la bibliotheque","Vous pouvez interroger quelqu un d autre "}
+dico[1] = {"question" : "Une fois sur les lieux du crime, souhaitez vous interroger Thomas l'aine de la fraterie ?","Thomas vous révèle qu au moment du crime il etait avec Julie dans le salon en train de ranger des livres dans la bibliotheque","Vous pouvez interroger quelqu un d autre "}
 
 dico[2] = {"Desirez vous interroger Julie pour confirmer les dires de Thomas ?","Julie vous confirme les faits","Vous pouvez faire autre chose"}
 dico[3] = {"Souhaitez vous interroger Deniz ?","Deniz vous devoile qu il était seul dans sa chambre en train de reviser ses partiels","Vous pouvez faire autre chose"}
